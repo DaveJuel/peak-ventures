@@ -18,7 +18,7 @@ export default function Footer() {
               <LogoImg />
             </a>
             <StyleP className="darkColor font13">
-              © {getCurrentYear()} - <span className="yellowColor font13">Knack Fusion</span> All Right Reserved
+              © {getCurrentYear()} - <span className="yellowColor font13">Peak Ventures</span> All Right Reserved
             </StyleP>
           </InnerWrapper>
         </div>

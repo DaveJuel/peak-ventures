@@ -241,7 +241,7 @@ const SkillTag = styled.div`
   &:hover {
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    background: ${(props) => (props.isHighlighted ? "#2d6b2d" : "#e7e7e7")};
+    background: ${(props) => (props.isHighlighted ? "#6C8939" : "#e7e7e7")};
   }
 `;
 
@@ -305,7 +305,7 @@ const CTAButton = styled.a`
   transition: all 0.3s ease;
 
   &:hover {
-    background: #2d6b2d;
+    background: #6C8939;
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   }

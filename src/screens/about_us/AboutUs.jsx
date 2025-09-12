@@ -21,7 +21,7 @@ export default function AboutUs({ hero, focus, mission, vision, values, cta }) {
         buttonText="Contact Us"
         buttonLink="/register"
         showButton={true}
-        bgImage={process.env.PUBLIC_URL + "/heroimg9.jpg"}
+        bgImage={process.env.PUBLIC_URL + "/heroimg2.jpg"}
       />
 
       <ContentWrapper>
@@ -265,7 +265,7 @@ const CTAButton = styled.a`
   transition: all 0.3s ease;
 
   &:hover {
-    background: #2d6b2d;
+    background: #6C8939;
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   }

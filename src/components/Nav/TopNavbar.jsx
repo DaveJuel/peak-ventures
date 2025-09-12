@@ -29,157 +29,51 @@ const defaultMenu = [
     href: "#",
     megaMenu: [
       {
-        title: "Product Design",
+        title: "Building & Civil Works",
         items: [
-          { label: "Product Management", href: "/services/product-management" },
-          { label: "UI/UX Design", href: "/services/ui-design" },
-          {
-            label: "Prototyping & Testing",
-            href: "/services/prototyping-testing",
-          },
+          { label: "Building Construction", href: "/services/building-construction" },
+          { label: "General Civil Works", href: "/services/civil-works" },
+          { label: "Concrete Works", href: "/services/concrete-works" },
+          { label: "Kerbs & Walkway Pavements", href: "/services/kerbs-walkways" },
         ],
       },
       {
-        title: "Engineering",
+        title: "Finishes & Interiors",
         items: [
-          { label: "Web Applications", href: "/services/web-applications" },
-          {
-            label: "Mobile Applications",
-            href: "/services/mobile-applications",
-          },
-          { label: "Cloud & DevOps", href: "/services/cloud-devops" },
+          { label: "Painting", href: "/services/painting" },
+          { label: "Tiling", href: "/services/tiling" },
+          { label: "Ceiling & Bulkhead Design", href: "/services/ceiling-bulkhead" },
+          { label: "Custom Finishes", href: "/services/custom-finishes" },
         ],
       },
       {
-        title: "Project Delivery",
+        title: "Utilities & Reticulation",
         items: [
-          {
-            label: "Agile Project Management",
-            href: "/services/agile-project-management",
-          },
-          { label: "Quality Assurance", href: "/services/quality-assurance" },
-          {
-            label: "Maintenance & Support",
-            href: "/services/maintenance-and-support",
-          },
+          { label: "Water Reticulation", href: "/services/water-reticulation" },
+          { label: "Waste-water Reticulation", href: "/services/wastewater-reticulation" },
+          { label: "Piping & Infrastructure", href: "/services/piping-infrastructure" },
         ],
       },
       {
-        title: "Technical Advisory",
+        title: "Project Delivery & Consultancy",
         items: [
-          {
-            label: "Architecture Consulting",
-            href: "/services/architecture-consulting",
-          },
-          {
-            label: "Digital Transformation",
-            href: "/services/digital-transformation",
-          },
-          { label: "Security Audits", href: "/services/security-audits" },
+          { label: "Project Management", href: "/services/project-management" },
+          { label: "Consultancy Services", href: "/services/consultancy" },
         ],
       },
     ],
   },
   {
-    label: "Expertise",
-    href: "#",
-    megaMenu: [
-      {
-        title: "Software Solutions",
-        items: [
-          { label: "Social Registry", href: "/solution/social-registry" },
-          {
-            label: "Rwanda's Valuation System",
-            href: "/solution/rwanda-valuation-system",
-          },
-          { label: "Deedz Platform", href: "/solution/deeds-platform" },
-          { label: "Repz", href: "/solution/repz" },
-        ],
-      },
-      {
-        title: "Project Management",
-        items: [
-          {
-            label: "Planning & Integration",
-            href: "/project/planning",
-          },
-          {
-            label: "Resource Management",
-            href: "/project/resource-management",
-          },
-          {
-            label: "Risk, Quality & Monitoring",
-            href: "/project/risk-quality-monitoring",
-          },
-          {
-            label: "Stakeholder & Communication Strategy",
-            href: "/project/stakeholder-comms",
-          },
-          {
-            label: "Adaptive Methodologies",
-            href: "/project/adaptive-methodologies",
-          },
-        ],
-      },
-      {
-        title: "Quality Assurance",
-        items: [
-          {
-            label: "Manual & Automated Testing",
-            href: "/qa/manual-test",
-          },
-          {
-            label: "Performance & Load Testing",
-            href: "/qa/performance-load-testing",
-          },
-          {
-            label: "Security & Compliance Testing",
-            href: "/qa/security-compliance-testing",
-          },
-          {
-            label: "Integration & E2E Testing",
-            href: "/qa/integration-testing",
-          },
-          {
-            label: "QA Team & Process Management",
-            href: "/qa/team-management",
-          },
-        ],
-      },
-      {
-        title: "System Administration",
-        items: [
-          {
-            label: "Infrastructure Provisioning",
-            href: "/sysadmin/infrastructure-provisioning",
-          },
-          {
-            label: "Server & Network Management",
-            href: "/sysadmin/server-network",
-          },
-          {
-            label: "Security & Access Control",
-            href: "/sysadmin/security-access-control",
-          },
-          {
-            label: "Backup & Disaster Recovery",
-            href: "/sysadmin/backup-disaster-recovery",
-          },
-          {
-            label: "Monitoring & Performance Tuning",
-            href: "/sysadmin/monitoring-performance",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    label: "Dedicated Team",
-    href: "/dedicated-team",
+    label: "Projects",
+    href: "/projects",
   },
   {
     label: "About Us",
     href: "/about-us",
+  },
+  {
+    label: "Contact",
+    href: "/contact",
   },
 ];
 

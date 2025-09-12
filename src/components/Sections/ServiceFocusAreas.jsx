@@ -1,61 +1,112 @@
 import React from "react";
 import styled from "styled-components";
-import { FaLaptop, FaMobile, FaCogs } from "react-icons/fa";
+import {
+  FaBuilding,
+  FaRoad,
+  FaThLarge,
+  FaDrawPolygon,
+  FaPaintRoller,
+  FaWater,
+  FaTools,
+  FaDraftingCompass,
+  FaProjectDiagram,
+} from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-import { FaChartGantt } from "react-icons/fa6";
 
 export default function ServicesFocusAreas() {
   const navigate = useNavigate();
 
   const services = [
     {
-      icon: <FaLaptop />,
-      title: "Web Development",
-      description: "Web-based software development services for companies that are ready to grow.",
+      icon: <FaBuilding />,
+      title: "Building Construction",
+      description:
+        "Full-scale residential, commercial, and industrial building construction delivered with quality and safety in mind.",
       color: "#4CAF50",
-      link: "/services/web-applications"
+      link: "/services/building-construction",
     },
     {
-      icon: <FaMobile />,
-      title: "Mobile Development",
-      description: "Mobile business and product custom applications that provide exceptional user experience.",
+      icon: <FaRoad />,
+      title: "General Civil Works",
+      description:
+        "Expert civil engineering services, covering infrastructure and foundational works for reliable development.",
       color: "#2196F3",
-      link:"/services/mobile-applications"
+      link: "/services/civil-works",
     },
     {
-      icon: <FaChartGantt />,
-      title: "Planning & Integration",
-      description: "Our Strategic Project Planning service transforms business objectives into actionable project roadmaps.",
+      icon: <FaThLarge />,
+      title: "Concrete Works",
+      description:
+        "Durable and precise concrete works for strong structural foundations and reliable performance.",
       color: "#FF9800",
-      link:"/project/planning"
+      link: "/services/concrete-works",
     },
     {
-      icon: <FaCogs />,
-      title: "Infrastructure Provisioning",
-      description: "We specialize in robust infrastructure provisioning and system administration, ensuring high availability, security, and performance.",
+      icon: <FaDrawPolygon />,
+      title: "Kerbs & Walkway Pavements",
+      description:
+        "Design and construction of kerbs, pavements, and walkways built for safety, durability, and aesthetics.",
       color: "#9C27B0",
-      link: "/sysadmin/infrastructure-provisioning"
-    }
+      link: "/services/kerbs-walkways",
+    },
+    {
+      icon: <FaPaintRoller />,
+      title: "Finishes",
+      description:
+        "High-quality interior finishes including painting, tiling, ceiling, and bulkhead design for modern appeal.",
+      color: "#FF5722",
+      link: "/services/finishes",
+    },
+    {
+      icon: <FaWater />,
+      title: "Water & Waste-water Reticulation",
+      description:
+        "Professional water and waste-water reticulation services ensuring efficient flow and sustainable systems.",
+      color: "#00BCD4",
+      link: "/services/water-wastewater",
+    },
+    {
+      icon: <FaTools />,
+      title: "Building Maintenance",
+      description:
+        "Regular maintenance and repair services that protect and extend the lifespan of your buildings.",
+      color: "#009688",
+      link: "/services/building-maintenance",
+    },
+    {
+      icon: <FaDraftingCompass />,
+      title: "Renovations & Architectural Design",
+      description:
+        "Custom renovations and architectural designs that blend innovation with functionality.",
+      color: "#795548",
+      link: "/services/renovations-architectural-design",
+    },
+    {
+      icon: <FaProjectDiagram />,
+      title: "Project Management & Consultancy",
+      description:
+        "Professional consultancy and project management ensuring safe, timely, and cost-effective delivery.",
+      color: "#607D8B",
+      link: "/services/project-management-consultancy",
+    },
   ];
 
   return (
     <ServicesWrapper>
       <div className="container">
         <HeaderInfo>
-          <SubHeading>GET TO KNOW WHAT WE'RE GOOD AT</SubHeading>
-          <MainHeading>Our main areas of focus</MainHeading>
+          <SubHeading>GET TO KNOW WHAT WE DO</SubHeading>
+          <MainHeading>Our Services</MainHeading>
           <HeadingUnderline />
         </HeaderInfo>
 
         <ServicesGrid>
           {services.map((service, index) => (
             <ServiceCard key={index}>
-              <IconWrapper color={service.color}>
-                {service.icon}
-              </IconWrapper>
+              <IconWrapper color={service.color}>{service.icon}</IconWrapper>
               <ServiceTitle>{service.title}</ServiceTitle>
               <ServiceDescription>{service.description}</ServiceDescription>
-              <LearnMoreLink onClick={()=>navigate(service.link)}>
+              <LearnMoreLink onClick={() => navigate(service.link)}>
                 <ArrowIcon>→</ArrowIcon>
               </LearnMoreLink>
             </ServiceCard>
@@ -90,14 +141,14 @@ const SubHeading = styled.h3`
 const MainHeading = styled.h1`
   font-size: 2.8rem;
   font-weight: 700;
-  color: #1A1A1A;
+  color: #1a1a1a;
   margin-bottom: 20px;
 `;
 
 const HeadingUnderline = styled.div`
   width: 80px;
   height: 4px;
-  background: linear-gradient(to right, #A2A3B0, #656565);
+  background: linear-gradient(to right, #a2a3b0, #656565);
   margin: 0 auto 25px;
   border-radius: 2px;
 `;
@@ -108,11 +159,11 @@ const ServicesGrid = styled.div`
   gap: 30px;
   max-width: 1200px;
   margin: 0 auto;
-  
+
   @media (max-width: 1200px) {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
   }
@@ -124,7 +175,7 @@ const ServiceCard = styled.div`
   align-items: flex-start;
   padding: 20px;
   transition: all 0.3s ease;
-  
+
   &:hover {
     transform: translateY(-5px);
   }
@@ -133,14 +184,14 @@ const ServiceCard = styled.div`
 const IconWrapper = styled.div`
   font-size: 2rem;
   margin-bottom: 20px;
-  color: ${props => props.color || "#A2A3B0"};
+  color: ${(props) => props.color || "#A2A3B0"};
 `;
 
 const ServiceTitle = styled.h3`
   font-size: 1.4rem;
   font-weight: 600;
   margin-bottom: 15px;
-  color: #1A1A1A;
+  color: #1a1a1a;
 `;
 
 const ServiceDescription = styled.p`
@@ -153,17 +204,17 @@ const ServiceDescription = styled.p`
 const LearnMoreLink = styled.a`
   margin-top: auto;
   cursor: pointer;
-  color: #FF6B35;
+  color: #ff6b35;
   font-weight: 500;
   display: flex;
   align-items: center;
-  
+
   &:hover {
-    color: #E95420;
+    color: #e95420;
   }
 `;
 
 const ArrowIcon = styled.span`
-  color: #FF6B35;
+  color: #ff6b35;
   font-size: 1.2rem;
 `;

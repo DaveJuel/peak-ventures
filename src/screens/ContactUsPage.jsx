@@ -554,7 +554,7 @@ const SubmitButton = styled.button`
   }
   
   &:hover {
-    background-color: ${props => props.hoverColor || "#2d6b2d"};
+    background-color: ${props => props.hoverColor || "#6C8939"};
     transform: translateY(-2px);
     
     svg {

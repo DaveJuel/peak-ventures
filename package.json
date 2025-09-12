@@ -1,6 +1,6 @@
 {
-  "name": "knack-fusion",
-  "version": "1.3.0",
+  "name": "peak-ventures",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^4.4.1",

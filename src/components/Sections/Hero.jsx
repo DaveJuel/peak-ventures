@@ -11,15 +11,15 @@ export default function Hero() {
 
   return (
     <HeroStyle2
-      title="Build, Scale & Optimize Digital Products."
+      title="Constructing Excellence, Brick by Brick."
       paragraphs={[
-        "Knack Fusion is a leading technology solutions provider based in Rwanda, working across Africa on various projects with a profound understanding of market needs.",
-        "Our company excels in developing cost-effective IT solutions that significantly enhance client workflows and efficiencies.",
+        // "Peak Ventures We boast of a highly qualified team of Engineers, Architects and Risk professionals with a combined 2 years of practical experience in Construction, Civil Works and Risk Management.",
+        "We boast of a highly qualified team of Engineers, Architects and Risk professionals in Construction, Civil Works and Risk Management.",
       ]}
       buttonText="Contact Us"
       buttonLink="/register"
       showButton={!isLoggedIn}
-      bgImage={process.env.PUBLIC_URL + "/heroimg8.jpg"}
+      bgImage={process.env.PUBLIC_URL + "/heroimg1.jpg"}
     />
   );
 }

@@ -131,7 +131,7 @@ const SubmitButton = styled.button`
   transition: all 0.3s ease;
   
   &:hover {
-    background-color: #2d6b2d;
+    background-color: #6C8939;
   }
   
   &:active {
