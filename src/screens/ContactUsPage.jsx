@@ -85,7 +85,7 @@ const ContactUsPage = () => {
                   </IconWrapper>
                   <ContactDetails>
                     <ContactMethodTitle>Email</ContactMethodTitle>
-                    <ContactMethodValue>info@knackfusion.com</ContactMethodValue>
+                    <ContactMethodValue>info@peakventures.com</ContactMethodValue>
                   </ContactDetails>
                 </ContactMethod>
                 
@@ -95,7 +95,7 @@ const ContactUsPage = () => {
                   </IconWrapper>
                   <ContactDetails>
                     <ContactMethodTitle>Phone</ContactMethodTitle>
-                    <ContactMethodValue>+250 788 277 693</ContactMethodValue>
+                    <ContactMethodValue>+250 788 37 37 09</ContactMethodValue>
                   </ContactDetails>
                 </ContactMethod>
                 

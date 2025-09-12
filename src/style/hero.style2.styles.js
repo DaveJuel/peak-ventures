@@ -80,7 +80,7 @@ export const LeftSide = styled.div`
   background: linear-gradient(
     to right,
     rgba(255, 255, 255, 1) 25%,
-    rgba(255, 255, 255, 0) 70%
+    rgba(255, 255, 255, 0) 50%
   );
   border-radius: 8px;
   

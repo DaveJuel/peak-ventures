@@ -65,7 +65,7 @@ const defaultMenu = [
   },
   {
     label: "Projects",
-    href: "/projects",
+    href: "/",
   },
   {
     label: "About Us",
