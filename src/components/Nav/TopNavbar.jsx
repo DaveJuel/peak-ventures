@@ -26,42 +26,42 @@ import {
 const defaultMenu = [
   {
     label: "Services",
-    href: "#",
-    megaMenu: [
-      {
-        title: "Building & Civil Works",
-        items: [
-          { label: "Building Construction", href: "/services/building-construction" },
-          { label: "General Civil Works", href: "/services/civil-works" },
-          { label: "Concrete Works", href: "/services/concrete-works" },
-          { label: "Kerbs & Walkway Pavements", href: "/services/kerbs-walkways" },
-        ],
-      },
-      {
-        title: "Finishes & Interiors",
-        items: [
-          { label: "Painting", href: "/services/painting" },
-          { label: "Tiling", href: "/services/tiling" },
-          { label: "Ceiling & Bulkhead Design", href: "/services/ceiling-bulkhead" },
-          { label: "Custom Finishes", href: "/services/custom-finishes" },
-        ],
-      },
-      {
-        title: "Utilities & Reticulation",
-        items: [
-          { label: "Water Reticulation", href: "/services/water-reticulation" },
-          { label: "Waste-water Reticulation", href: "/services/wastewater-reticulation" },
-          { label: "Piping & Infrastructure", href: "/services/piping-infrastructure" },
-        ],
-      },
-      {
-        title: "Project Delivery & Consultancy",
-        items: [
-          { label: "Project Management", href: "/services/project-management" },
-          { label: "Consultancy Services", href: "/services/consultancy" },
-        ],
-      },
-    ],
+    href: "/#service-section",
+    // megaMenu: [
+    //   {
+    //     title: "Building & Civil Works",
+    //     items: [
+    //       { label: "Building Construction", href: "/services/building-construction" },
+    //       { label: "General Civil Works", href: "/services/civil-works" },
+    //       { label: "Concrete Works", href: "/services/concrete-works" },
+    //       { label: "Kerbs & Walkway Pavements", href: "/services/kerbs-walkways" },
+    //     ],
+    //   },
+    //   {
+    //     title: "Finishes & Interiors",
+    //     items: [
+    //       { label: "Painting", href: "/services/painting" },
+    //       { label: "Tiling", href: "/services/tiling" },
+    //       { label: "Ceiling & Bulkhead Design", href: "/services/ceiling-bulkhead" },
+    //       { label: "Custom Finishes", href: "/services/custom-finishes" },
+    //     ],
+    //   },
+    //   {
+    //     title: "Utilities & Reticulation",
+    //     items: [
+    //       { label: "Water Reticulation", href: "/services/water-reticulation" },
+    //       { label: "Waste-water Reticulation", href: "/services/wastewater-reticulation" },
+    //       { label: "Piping & Infrastructure", href: "/services/piping-infrastructure" },
+    //     ],
+    //   },
+    //   {
+    //     title: "Project Delivery & Consultancy",
+    //     items: [
+    //       { label: "Project Management", href: "/services/project-management" },
+    //       { label: "Consultancy Services", href: "/services/consultancy" },
+    //     ],
+    //   },
+    // ],
   },
   {
     label: "Projects",
@@ -73,7 +73,7 @@ const defaultMenu = [
   },
   {
     label: "Contact",
-    href: "/contact",
+    href: "/contact-us",
   },
 ];
 

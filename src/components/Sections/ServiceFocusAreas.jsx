@@ -92,10 +92,10 @@ export default function ServicesFocusAreas() {
   ];
 
   return (
-    <ServicesWrapper>
+    <ServicesWrapper id="service-section">
       <div className="container">
         <HeaderInfo>
-          <SubHeading>GET TO KNOW WHAT WE DO</SubHeading>
+          {/* <SubHeading>GET TO KNOW WHAT WE DO</SubHeading> */}
           <MainHeading>Our Services</MainHeading>
           <HeadingUnderline />
         </HeaderInfo>
@@ -129,14 +129,14 @@ const HeaderInfo = styled.div`
   position: relative;
 `;
 
-const SubHeading = styled.h3`
-  font-size: 1rem;
-  color: #666;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 10px;
-  font-weight: 500;
-`;
+// const SubHeading = styled.h3`
+//   font-size: 1rem;
+//   color: #666;
+//   text-transform: uppercase;
+//   letter-spacing: 1px;
+//   margin-bottom: 10px;
+//   font-weight: 500;
+// `;
 
 const MainHeading = styled.h1`
   font-size: 2.8rem;

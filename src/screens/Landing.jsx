@@ -25,8 +25,8 @@ export default function Landing() {
       <Pricing />
       <CallToAction />
        */}
+      {/* <Projects /> */}
+      {/* <CallToAction /> */}
     </>
   );
 }
-
-

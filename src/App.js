@@ -40,6 +40,7 @@ import ArchitectureConsultingPage from "./screens/services/ArchitectureConsultin
 import DigitalTransformationPage from "./screens/services/DigitalTransformationPage.jsx";
 import SecurityAuditPage from "./screens/services/SecurityAuditPage.jsx";
 import ContactUsPage from "./screens/ContactUsPage.jsx";
+import BuildingConstructionPage from "./screens/services/BuildingConstruction.jsx";
 
 export default function App() {
   return (
@@ -55,6 +56,7 @@ export default function App() {
           <Route path="/home" element={<Landing />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/services/building-construction" element={<BuildingConstructionPage />} />
           <Route path="/services/product-management" element={<ProductStrategyPage />} />
           <Route path="/services/ui-design" element={<UIDesignPage />} />
           <Route path="/services/prototyping-testing" element={<PrototypingTestingPage />} />
