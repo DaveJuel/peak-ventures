@@ -1,0 +1,32 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 300 100"
+  width="240"
+  height="80"
+>
+  <circle cx="120" cy="50" r="21" fill="none" stroke="#4eb14e" stroke-width="3" />
+  <circle cx="120" cy="50" r="14" fill="none" stroke="#4eb14e" stroke-width="2" />
+  <circle cx="120" cy="50" r="7" fill="none" stroke="#4eb14e" stroke-width="1.5" />
+  <text 
+    x="20%" 
+    y="60%" 
+    text-anchor="middle" 
+    fill="#121212" 
+    font-size="36px" 
+    font-weight="bold"
+  >
+    Knack
+  </text>
+
+  <!-- Text: Fusion -->
+  <text 
+    x="60%" 
+    y="60%" 
+    text-anchor="middle" 
+    fill="#121212" 
+    font-size="36px" 
+    font-weight="bold"
+  >
+    Fusion
+  </text>
+</svg>
