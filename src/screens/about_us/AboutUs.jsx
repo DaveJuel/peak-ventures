@@ -17,6 +17,12 @@ const theme = {
 export default function AboutUs({ hero, focus, mission, vision, values, cta }) {
   const certifications = [
     {
+      title: "CERTIFICATE OF WORK COMPLETION",
+      pdfPath: "/certificates/brac_certificate.pdf",
+      issuer: "BRAC",
+      fileName: "brac_certificate.pdf",
+    },
+    {
       title: "CERTIFICATE OF COMPLETION",
       pdfPath: "/certificates/christian_service_cert.pdf",
       issuer: "CHRISTIAN SERVICE INTERNATIONAL",
