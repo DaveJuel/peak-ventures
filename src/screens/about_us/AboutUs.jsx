@@ -5,6 +5,7 @@ import TeamView from "../../components/Sections/TeamMembers";
 import Hero from "../../components/Sections/Hero";
 import ServicesFocusAreas from "../../components/Sections/ServiceFocusAreas";
 import AboutUsSection from "../../components/Sections/AboutUsSection";
+import OurWorksSection from "../../components/Sections/OurWorksSection";
 
 const theme = {
   primary: "#3C8C3C",
@@ -105,6 +106,7 @@ export default function AboutUs({ hero, focus, mission, vision, values, cta }) {
             ))}
           </ValuesList>
         </ValuesSection>
+        <OurWorksSection />
         <CertificationSection id="certifications">
           <SectionHeading>Certifications</SectionHeading>
           <CertificationView certifications={certifications} />

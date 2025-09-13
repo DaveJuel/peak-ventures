@@ -38,7 +38,7 @@ const defaultMenu = [
   },
   {
     label: "Our Works",
-    href: "#certifications",
+    href: "#our-works",
   },
   {
     label: "Certifications",
