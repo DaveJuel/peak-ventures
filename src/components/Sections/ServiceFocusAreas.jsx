@@ -11,10 +11,8 @@ import {
   FaDraftingCompass,
   FaProjectDiagram,
 } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
 
 export default function ServicesFocusAreas() {
-  const navigate = useNavigate();
 
   const services = [
     {
@@ -106,9 +104,6 @@ export default function ServicesFocusAreas() {
               <IconWrapper color={service.color}>{service.icon}</IconWrapper>
               <ServiceTitle>{service.title}</ServiceTitle>
               <ServiceDescription>{service.description}</ServiceDescription>
-              <LearnMoreLink onClick={() => navigate(service.link)}>
-                <ArrowIcon>→</ArrowIcon>
-              </LearnMoreLink>
             </ServiceCard>
           ))}
         </ServicesGrid>
@@ -199,22 +194,4 @@ const ServiceDescription = styled.p`
   color: #666;
   line-height: 1.6;
   margin-bottom: 20px;
-`;
-
-const LearnMoreLink = styled.a`
-  margin-top: auto;
-  cursor: pointer;
-  color: #ff6b35;
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-
-  &:hover {
-    color: #e95420;
-  }
-`;
-
-const ArrowIcon = styled.span`
-  color: #ff6b35;
-  font-size: 1.2rem;
 `;
