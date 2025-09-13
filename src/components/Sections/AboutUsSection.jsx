@@ -11,7 +11,6 @@ const theme = {
   gray: "#F5F5F5",
 };
 
-// About Us Component
 export default function AboutUsSection() {
   return (
     <div id="about-us" style={{ padding: "100px 0 30px" }}>
@@ -21,9 +20,6 @@ export default function AboutUsSection() {
         <LeftSide className="flexCenter">
           <div>
             <h1 className="extraBold darkGreenColor font40">PEAK VENTURES CONSTRUCTION</h1>
-            {/* <CompanyTitle className="extraBold darkGreenColor font60">
-              PEAK VENTURES CONSTRUCTION
-            </CompanyTitle> */}
             <AboutP className="font16 regular">
               Over the last 20 years, the construction industry in Rwanda has
               seen an unprecedented development and investment in modern
@@ -121,20 +117,6 @@ const AboutTitle = styled.h2`
   text-align: center;
   margin-bottom: 16px;
 `;
-
-// const CompanyTitle = styled.h1`
-//   color: #6C8A39;
-//   margin-bottom: 40px;
-//   letter-spacing: 2px;
-
-//   @media (max-width: 768px) {
-//     font-size: 48px !important;
-//   }
-
-//   @media (max-width: 560px) {
-//     font-size: 36px !important;
-//   }
-// `;
 
 const AboutP = styled.div`
   max-width: 500px;
