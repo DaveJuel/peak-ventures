@@ -1,9 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import LogoIcon from "../../assets/svg/Logo";
-import FullButton from "../Buttons/FullButton";
 import {
-  BtnWrapper,
   CloseButton,
   DropdownItem,
   LogoWrapper,
@@ -17,69 +15,39 @@ import {
   MobileMenuIcon,
   MobileNavLink,
   NavInner,
-  ProfileLink,
   UlWrapper,
-  UlWrapperRight,
   Wrapper,
 } from "../../style/navbar.styles";
 
 const defaultMenu = [
   {
-    label: "Services",
-    href: "/#service-section",
-    // megaMenu: [
-    //   {
-    //     title: "Building & Civil Works",
-    //     items: [
-    //       { label: "Building Construction", href: "/services/building-construction" },
-    //       { label: "General Civil Works", href: "/services/civil-works" },
-    //       { label: "Concrete Works", href: "/services/concrete-works" },
-    //       { label: "Kerbs & Walkway Pavements", href: "/services/kerbs-walkways" },
-    //     ],
-    //   },
-    //   {
-    //     title: "Finishes & Interiors",
-    //     items: [
-    //       { label: "Painting", href: "/services/painting" },
-    //       { label: "Tiling", href: "/services/tiling" },
-    //       { label: "Ceiling & Bulkhead Design", href: "/services/ceiling-bulkhead" },
-    //       { label: "Custom Finishes", href: "/services/custom-finishes" },
-    //     ],
-    //   },
-    //   {
-    //     title: "Utilities & Reticulation",
-    //     items: [
-    //       { label: "Water Reticulation", href: "/services/water-reticulation" },
-    //       { label: "Waste-water Reticulation", href: "/services/wastewater-reticulation" },
-    //       { label: "Piping & Infrastructure", href: "/services/piping-infrastructure" },
-    //     ],
-    //   },
-    //   {
-    //     title: "Project Delivery & Consultancy",
-    //     items: [
-    //       { label: "Project Management", href: "/services/project-management" },
-    //       { label: "Consultancy Services", href: "/services/consultancy" },
-    //     ],
-    //   },
-    // ],
+    label: "About Us",
+    href: "#about-us",
   },
   {
-    label: "About Us",
-    href: "/about-us",
+    label: "Our Services",
+    href: "#service-section",
+  },
+  {
+    label: "Vision & Mission",
+    href: "#mission-vision",
+  },
+  {
+    label: "Management Team",
+    href: "#team",
+  },
+  {
+    label: "Our Works",
+    href: "#certifications",
   },
   {
     label: "Certifications",
-    href: "/about-us#certifications",
-  },
-  {
-    label: "Our Team",
-    href: "/about-us#team",
-  },
+    href: "#certifications",
+  }
 ];
 
 export default function TopNavbar() {
   const [y, setY] = useState(window.scrollY);
-  const [isLoggedIn] = useState(false);
   const [menuItems] = useState(defaultMenu);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -200,26 +168,6 @@ export default function TopNavbar() {
           ))}
         </UlWrapper>
 
-        {/* Right side menu (desktop) */}
-        <UlWrapperRight className="flexNullCenter">
-          {isLoggedIn ? (
-            <ProfileLink className="semiBold font15 pointer flexCenter">
-              <a href="/my-profile" className="radius8 lightBg">
-                My Profile
-              </a>
-            </ProfileLink>
-          ) : (
-            <li className="semiBold font15 pointer flexCenter">
-              <BtnWrapper>
-                <FullButton
-                  title="Contact Us"
-                  action={() => (window.location.href = "/contact-us")}
-                />
-              </BtnWrapper>
-            </li>
-          )}
-        </UlWrapperRight>
-
         {/* Mobile Navigation */}
         <MobileMenu ref={mobileMenuRef} isOpen={mobileMenuOpen}>
           <CloseButton onClick={toggleMobileMenu}>&times;</CloseButton>
@@ -267,23 +215,6 @@ export default function TopNavbar() {
               )}
             </div>
           ))}
-
-          <div className="mobile-auth">
-            {isLoggedIn ? (
-              <MobileNavLink className="semiBold font15">
-                <a href="/my-profile" className="profile-link">
-                  My Profile
-                </a>
-              </MobileNavLink>
-            ) : (
-              <div className="mobile-btn-wrapper">
-                <FullButton
-                  title="Contact Us"
-                  action={() => (window.location.href = "/contact-us")}
-                />
-              </div>
-            )}
-          </div>
         </MobileMenu>
       </NavInner>
     </Wrapper>

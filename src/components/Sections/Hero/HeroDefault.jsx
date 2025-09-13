@@ -55,7 +55,7 @@ export default function HeroDefault() {
           <ImageWrapper>
             <Img
               className="radius8"
-              src={`${process.env.PUBLIC_URL}/heroimg3.jpg`}
+              src={`${process.env.PUBLIC_URL}/heroimg4.jpg`}
               width={400}
               height={350}
               alt="office"

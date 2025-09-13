@@ -1,7 +1,7 @@
 import React from "react";
 import AboutUs from "./AboutUs";
 
-export default function AboutUsCompany() {
+export default function CompanyProfile() {
   return (
     <AboutUs
       hero={{

@@ -35,7 +35,7 @@ export const WhiteOverlay = styled.div`
   position: absolute;
   top: 0;
   left: 0;
-  width: 70%;
+  width: 60%;
   height: 100%;
   background: linear-gradient(
     to right,

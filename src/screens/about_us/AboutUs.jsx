@@ -1,17 +1,18 @@
 import React from "react";
 import styled from "styled-components";
-import HeroStyle2 from "../../components/Sections/Hero/HeroStyle2";
 import CertificationView from "../../components/Sections/CertificateView";
 import TeamView from "../../components/Sections/TeamMembers";
+import Hero from "../../components/Sections/Hero";
+import ServicesFocusAreas from "../../components/Sections/ServiceFocusAreas";
+import AboutUsSection from "../../components/Sections/AboutUsSection";
 
-// Define theme colors
 const theme = {
-  primary: "#3C8C3C", // Green
-  dark: "#121212", // Near black
-  white: "#FFFFFF", // White
-  lightGreen: "#E8F5E8", // Light green background
-  mediumGreen: "#6AAC6A", // Medium green for hover states
-  gray: "#F5F5F5", // Light gray for sections
+  primary: "#3C8C3C",
+  dark: "#121212",
+  white: "#FFFFFF",
+  lightGreen: "#E8F5E8",
+  mediumGreen: "#6AAC6A",
+  gray: "#F5F5F5",
 };
 
 export default function AboutUs({ hero, focus, mission, vision, values, cta }) {
@@ -71,22 +72,15 @@ export default function AboutUs({ hero, focus, mission, vision, values, cta }) {
 
   return (
     <Container>
-      <HeroStyle2
-        title={hero.title}
-        paragraphs={hero.subtitle}
-        buttonText="Contact Us"
-        buttonLink="/register"
-        showButton={false}
-        bgImage={process.env.PUBLIC_URL + "/heroimg5.jpg"}
-      />
-
+      <Hero />
       <ContentWrapper>
-        <StorySection>
+        <AboutUsSection />
+        <ServicesFocusAreas />
+        <StorySection id="mission-vision">
           <SectionHeading>Our Focus</SectionHeading>
           <Divider />
           <SectionText>{focus}</SectionText>
         </StorySection>
-
         <GridSection>
           <MissionCard>
             <CardHeading>Mission</CardHeading>
@@ -143,7 +137,7 @@ const SectionHeading = styled.h2`
   margin-bottom: 16px;
 `;
 
-const Divider = styled.div`
+export const Divider = styled.div`
   height: 4px;
   width: 80px;
   background-color: ${theme.primary};
@@ -161,14 +155,14 @@ const SectionText = styled.p`
 `;
 
 const StorySection = styled.section`
-  padding: 100px 0 60px;
+  padding: 100px 0 30px;
 `;
 
 const GridSection = styled.section`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 40px;
-  margin: 80px 0;
+  gap: 20px;
+  margin: 40px 0;
 
   @media (min-width: 768px) {
     grid-template-columns: 1fr 1fr;
