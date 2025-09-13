@@ -13,7 +13,7 @@ import ConnectWithEmailForm from "../../Elements/ConnectWithEmailForm";
 export default function HeroStyle2({
   title,
   paragraphs,
-  showButton = true,
+  showButton = false,
   bgImage,
 }) {
   return (

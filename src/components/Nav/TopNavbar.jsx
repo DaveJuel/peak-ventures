@@ -64,16 +64,16 @@ const defaultMenu = [
     // ],
   },
   {
-    label: "Projects",
-    href: "/",
-  },
-  {
     label: "About Us",
     href: "/about-us",
   },
   {
-    label: "Contact",
-    href: "/contact-us",
+    label: "Certifications",
+    href: "/about-us#certifications",
+  },
+  {
+    label: "Our Team",
+    href: "/about-us#team",
   },
 ];
 

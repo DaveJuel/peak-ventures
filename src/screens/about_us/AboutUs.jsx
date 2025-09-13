@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import HeroStyle2 from "../../components/Sections/Hero/HeroStyle2";
+import CertificationView from "../../components/Sections/CertificateView";
+import TeamView from "../../components/Sections/TeamMembers";
 
 // Define theme colors
 const theme = {
@@ -13,6 +15,54 @@ const theme = {
 };
 
 export default function AboutUs({ hero, focus, mission, vision, values, cta }) {
+  const certifications = [
+    {
+      title: "CERTIFICATE OF COMPLETION",
+      pdfPath: "/certificates/christian_service_cert.pdf",
+      issuer: "CHRISTIAN SERVICE INTERNATIONAL",
+      fileName: "christian_service_cert.pdf",
+    },
+    {
+      title: "CERTIFICATE OF GOOD COMPLETION",
+      pdfPath: "/certificates/ea_agro.pdf",
+      issuer: "EA Agro",
+      fileName: "ea_agro.pdf",
+    },
+    {
+      title: "CERTIFICATE OF EXECUTION BY CONTRACTOR",
+      pdfPath: "/certificates/gil_cert.pdf",
+      issuer: "Civil Engineer",
+      fileName: "gil_cert.pdf",
+    },
+  ];
+
+  const teamData = [
+    {
+      name: "Eng. Phillip MUTIJIMA",
+      position: "Managing Director",
+      description:
+        "Phillip is a highly motivated, goal-driven and seasoned Civil Engineer possessing leadership and critical thinking expertise. He brings 5 years of practical experience in the execution of various civil projects across different provinces of Rwanda.",
+    },
+    {
+      name: "Dora Ndahiro TENGERA",
+      position: "Administration",
+      description:
+        "Dora directs and manages the business' administrative operations and management of the PEAK VENTURES team collectively. Being an Insurance professional with more than 6 years of practical experience in both Claims Management and Risk Underwriting.",
+    },
+    {
+      name: "Eng. Gilbert UJENEZA",
+      position: "Structural & Architect",
+      description:
+        "Gilbert is a detail-oriented Architect with over 4 years of working experience adept at designing commercial and residential projects. He is proficient with AutoCAD, and Autodesk Revit, ArchiCAD and Sketch Up just to mention a few. He holds a Bachelor Degree in civil works from University of Rwanda.",
+    },
+    {
+      name: "Eng. Joseph TUYISHIME",
+      position: "Site Engineer",
+      description:
+        "Joseph holds a Bachelor of Engineering in Civil Engineering from University of Rwanda KIST Branch. His experience includes the Kigali Karama road Decongestion Project where he was stationed at the project as a Consulting Engineer. He has proven proficiency in Architectural and Structural Drawing with Computer Aided Design software packages such as AutoCAD, Revit, Civil3D, Tekla, Prota and many others. Additionally, Joseph has worked as a Site Engineer on numerous residential housing and commercial projects.",
+    },
+  ];
+
   return (
     <Container>
       <HeroStyle2
@@ -20,7 +70,7 @@ export default function AboutUs({ hero, focus, mission, vision, values, cta }) {
         paragraphs={hero.subtitle}
         buttonText="Contact Us"
         buttonLink="/register"
-        showButton={true}
+        showButton={false}
         bgImage={process.env.PUBLIC_URL + "/heroimg5.jpg"}
       />
 
@@ -55,23 +105,15 @@ export default function AboutUs({ hero, focus, mission, vision, values, cta }) {
             ))}
           </ValuesList>
         </ValuesSection>
+        <CertificationSection id="certifications">
+          <SectionHeading>Certifications</SectionHeading>
+          <CertificationView certifications={certifications} />
+        </CertificationSection>
+        <TeamSection id="team">
+          <SectionHeading>Our Team</SectionHeading>
+          <TeamView teamMembers={teamData} />
+        </TeamSection>
       </ContentWrapper>
-      <CTASection>
-        <div className="container">
-          <CTAContent>
-            <CTATextContent>
-              <CTATitle>{cta.title}</CTATitle>
-              <CTADescription>
-                Let our dedicated team of experts help you achieve your business
-                goals with tailored solutions and expert implementation.
-              </CTADescription>
-            </CTATextContent>
-            <CTAButtonWrapper>
-              <CTAButton href={cta.link}>{cta.button}</CTAButton>
-            </CTAButtonWrapper>
-          </CTAContent>
-        </div>
-      </CTASection>
     </Container>
   );
 }
@@ -205,68 +247,11 @@ const ValueIcon = styled.span`
   font-size: 1.2rem;
 `;
 
-const CTASection = styled.section`
-  background: #121212;
-  color: white;
-  padding: 80px 20px;
-
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+const CertificationSection = styled.section`
+  margin: 80px 0;
 `;
 
-const CTAContent = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 30px;
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    text-align: center;
-  }
-`;
-
-const CTATextContent = styled.div`
-  flex: 2;
-`;
-
-const CTATitle = styled.h2`
-  font-size: 2.25rem;
-  margin-bottom: 15px;
-`;
-
-const CTADescription = styled.p`
-  font-size: 1.1rem;
-  opacity: 0.8;
-  max-width: 600px;
-`;
-
-const CTAButtonWrapper = styled.div`
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-
-  @media (max-width: 768px) {
-    justify-content: center;
-    margin-top: 20px;
-  }
-`;
-
-const CTAButton = styled.a`
-  display: inline-block;
-  padding: 16px 40px;
-  background: #3c8c3c;
-  color: white;
-  font-weight: 600;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: all 0.3s ease;
-
-  &:hover {
-    background: #6C8939;
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  }
+// Styled components for consistent layout
+const TeamSection = styled.section`
+  margin: 80px 0;
 `;
