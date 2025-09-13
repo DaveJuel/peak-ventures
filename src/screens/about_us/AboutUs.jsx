@@ -21,7 +21,7 @@ export default function AboutUs({ hero, focus, mission, vision, values, cta }) {
         buttonText="Contact Us"
         buttonLink="/register"
         showButton={true}
-        bgImage={process.env.PUBLIC_URL + "/heroimg2.jpg"}
+        bgImage={process.env.PUBLIC_URL + "/heroimg5.jpg"}
       />
 
       <ContentWrapper>

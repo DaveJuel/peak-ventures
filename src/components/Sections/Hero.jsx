@@ -19,7 +19,7 @@ export default function Hero() {
       buttonText="Contact Us"
       buttonLink="/register"
       showButton={!isLoggedIn}
-      bgImage={process.env.PUBLIC_URL + "/heroimg1.jpg"}
+      bgImage={process.env.PUBLIC_URL + "/heroimg4.jpg"}
     />
   );
 }
