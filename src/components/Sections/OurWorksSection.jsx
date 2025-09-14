@@ -86,6 +86,7 @@ export default function OurWorksSection({ works = worksData }) {
                 <MainImage
                   src={allImages[selectedImageIndex]}
                   alt={`${currentWork.client} - Main`}
+                  loading="lazy"
                 />
                 <ImageOverlay>
                   <ImageCounter className="font14 medium">
@@ -102,6 +103,7 @@ export default function OurWorksSection({ works = worksData }) {
                     alt={`${currentWork.client} - ${index + 1}`}
                     active={selectedImageIndex === index}
                     onClick={() => setSelectedImageIndex(index)}
+                    loading="lazy"
                   />
                 ))}
               </ThumbnailsContainer>
