@@ -14,11 +14,11 @@ const worksData = [
       "Walk ways",
       "Landscaping"
     ],
-    mainImage: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop",
+    mainImage: `${process.env.PUBLIC_URL + "/residential1.jpeg"}`,
     additionalImages: [
-      "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=400&h=300&fit=crop"
+      `${process.env.PUBLIC_URL + "/residential2.jpg"}`,
+      `${process.env.PUBLIC_URL + "/residential3.jpeg"}`,
+      `${process.env.PUBLIC_URL + "/residential4.jpeg"}`
     ]
   },
   {
@@ -26,11 +26,11 @@ const worksData = [
     client: "Christian service international",
     description: "We completed the construction of a ware house for christian international services for there products.",
     deliverables: [],
-    mainImage: "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=800&h=600&fit=crop",
+    mainImage: `${process.env.PUBLIC_URL + "/warehouse1.jpg"}`,
     additionalImages: [
-      "https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1504813184591-01572f98c85f?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=400&h=300&fit=crop"
+      `${process.env.PUBLIC_URL + "/warehouse2.jpg"}`,
+      `${process.env.PUBLIC_URL + "/warehouse3.jpg"}`,
+      `${process.env.PUBLIC_URL + "/warehouse4.jpg"}`
     ]
   },
   {
@@ -38,11 +38,10 @@ const worksData = [
     client: "Brac international Rwanda",
     description: "Having successfully completed the construction of a 4 Classroom Block for the Brac international rwanda.",
     deliverables: [],
-    mainImage: "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=800&h=600&fit=crop",
+    mainImage: `${process.env.PUBLIC_URL + "/school1.jpg"}`,
     additionalImages: [
-      "https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1504813184591-01572f98c85f?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=400&h=300&fit=crop"
+      `${process.env.PUBLIC_URL + "/school2.jpg"}`,
+      `${process.env.PUBLIC_URL + "/school3.jpg"}`,
     ]
   }
 ];
